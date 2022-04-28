@@ -47,7 +47,17 @@ button{
     border-color: white;
     color:white;
     font-size: larger;
-    border-radius: 2px;
+    border-radius: 5px;
+}
+button:hover,a:hover{
+    background-color: white;
+    border-color: black;
+    color:black;
+    transition-duration:0.5s;
+    transition-delay:0;
+    font-size: larger;
+    border-radius: 8px;
+
 }
 a{
     
@@ -70,4 +80,24 @@ a{
 }
 html{
     scroll-behavior:smooth;
+}
+.div4{
+    background-color: transparent;
+    border-color: white;
+    color:white;
+    font-size: larger;
+    border-radius: 5px;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+}
+label{
+    font-size:larger;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-color:white;
+    border-width:10px;
 }

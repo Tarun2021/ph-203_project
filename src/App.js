@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 
 import './global.css'
-import Poster from './assets/vacuum_image_2.jpg'
+import Poster from './assets/Night_Galaxy.jpg'
 import Video from './assets/video-1.mp4'
 import React, { useState } from "react";
 function App() {
@@ -91,54 +91,64 @@ function App() {
       <video className='video-1' autoPlay loop muted poster={Poster}>
         <source src={Video} type="video/mp4" />
       </video>
-      <h1><center>PH-203 PROJECT</center></h1>
+      <h1><center>PH-203 VACUUM PROJECT</center></h1>
       <div className="display">
-      <a href="#div1">Pumping speed and throughput</a>
-      
-      <a href="#div2"> Suction chamber</a>
-      <a href="#div3"> Group members</a>
+        <a href="#div1">Pumping speed and throughput</a>
+        <a href="#div2"> Suction chamber</a>
+        <a href="#div3"> Group members</a>
       </div>
-      <div id="div1" className="elemt1">
-      
-      <h2>Calculating Throughput and Pumping speed using gas equations: </h2>
-        <label htmlFor="moles">Enter moles:   </label>
-        <input type="text" id="moles" onChange={useOnce} placeholder="Enter moles"/>
-        <br />
-        <label htmlFor="temp">Enter temperature in Kelvin:</label>
-        <input type="text" id="temp" onChange={useForward} placeholder="Enter temperature in Kelvin"/>
-        < br />
-        <label htmlFor="time">Enter time in seconds:</label>
-        <input type="text" id="time" onChange={useTime} placeholder="Enter time in seconds"/>
-        < br />
-        <label htmlFor="pressure">Enter pressure in Pascals:</label>
-        <input type="text" id="pressure" onChange ={usepressure} placeholder ="Enter pressure in Pascals"/>
-        < br />
-        <button onClick={useDf}>Calculate</button>
-        <p>Throughput: {result ?? 'N/A'}</p>
-        <p>Pumping Speed : {result2 ?? 'N/A'} </p>
-        </div>
+      <div id="div1" className="elemt1 container">
+      <div className="inputs">
         
-        <div id="div2" className="elemt1">
-          <h2>Calculating the same for a suction chamber when connected to a diaphragm pump: </h2>
-          <label htmlFor="presin">Enter input pressure:   </label>
-           
-          <input type="text" id="presin" onChange={usepresin} placeholder="Enter input pressure(Pa)"/>
+          <h2>Calculating Throughput and Pumping speed using gas equations: </h2>
+          <label htmlFor="moles">Enter moles:   </label>
+          <input type="text" id="moles" onChange={useOnce} placeholder="Enter moles"/>
           <br />
-          <label htmlFor="presout">Enter output pressure:   </label>
-          <input type="text" id="presout" onChange={usepresout} placeholder="Enter output pressure(Pa)"/>
-          <br />
-          <label htmlFor="svol">Enter suction chamber volume:   </label>
-          <input type="text" id="svol" onChange={usesvol} placeholder="Enter suction chamber volume(Vs)"/>
-          <br />
-          <label htmlFor="dsvol">Enter dead space volume:   </label>
-          <input type="text" id="dsvol" onChange={usedsvol} placeholder="Enter dead-space volume(Vds)"/>
-          <br />
-          <label htmlFor="rotsp">Enter speed of rotation:   </label>
-          <input type="text" id="rotsp" onChange={userotsp} placeholder="Enter rotational speed(n)"/>
+          <label  htmlFor="temp">Enter temperature in Kelvin:</label>
+          <input type="text" id="temp" onChange={useForward} placeholder="Enter temperature in Kelvin"/>
           < br />
-          <button onClick={usecalc}>Calculate</button>
-          <p>Throughput: {result3 ?? 'N/A'}</p>
-          <p>Pumping Speed : {result4 ?? 'N/A'} </p>
+          <label htmlFor="time">Enter time in seconds:</label>
+          <input type="text" id="time" onChange={useTime} placeholder="Enter time in seconds"/>
+          < br />
+          <label htmlFor="pressure">Enter pressure in Pascals:</label>
+          <input type="text" id="pressure" onChange ={usepressure} placeholder ="Enter pressure in Pascals"/>
+          < br />
+          <button type="button" onClick={useDf}>Calculate</button>
+      </div>
+        
+        <div className="div4 ">
+        <h3>Throughput: {result ?? 'N/A'} J/s</h3>
+        <h3>Pumping Speed : {result2 ?? 'N/A'} m<sup>3</sup>/s </h3>
+        </div>
+      </div>
+        
+        
+        <div id="div2" className="elemt1 container">
+          <div className="inputs">
+            <h2>Calculating the same for a suction chamber when connected to a diaphragm pump: </h2>
+            <label htmlFor="presin">Enter input pressure:   </label>
+            
+            <input type="text" id="presin" onChange={usepresin} placeholder="Enter input pressure(Pa)"/>
+            <br />
+            <label htmlFor="presout">Enter output pressure:   </label>
+            <input type="text" id="presout" onChange={usepresout} placeholder="Enter output pressure(Pa)"/>
+            <br />
+            <label htmlFor="svol">Enter suction chamber volume:   </label>
+            <input type="text" id="svol" onChange={usesvol} placeholder="Enter suction chamber volume(Vs)"/>
+            <br />
+            <label htmlFor="dsvol">Enter dead space volume:   </label>
+            <input type="text" id="dsvol" onChange={usedsvol} placeholder="Enter dead-space volume(Vds)"/>
+            <br />
+            <label htmlFor="rotsp">Enter speed of rotation:   </label>
+            <input type="text" id="rotsp" onChange={userotsp} placeholder="Enter rotational speed(n)"/>
+            < br />
+            <button onClick={usecalc}>Calculate</button>
+          </div>
+          <div className="div4">
+          <h3>Throughput: {result3 ?? 'N/A'} J/s</h3>
+          <h3>Pumping Speed : {result4 ?? 'N/A'} m<sup>3</sup>/s </h3>
+          </div>
+          
         </div>
          
         <div id="div3" >
