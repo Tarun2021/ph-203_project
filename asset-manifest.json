@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ph-203_project/static/css/main.1325d8d8.css",
-    "main.js": "/ph-203_project/static/js/main.b28224fa.js",
+    "main.css": "/ph-203_project/static/css/main.3a788b25.css",
+    "main.js": "/ph-203_project/static/js/main.53369219.js",
     "static/media/video-1.mp4": "/ph-203_project/static/media/video-1.59e75226d30ad48f9ede.mp4",
-    "static/media/vacuum_image_2.jpg": "/ph-203_project/static/media/vacuum_image_2.386235289a219441906d.jpg",
+    "static/media/Night_Galaxy.jpg": "/ph-203_project/static/media/Night_Galaxy.2ff0e87005ba95d8bf40.jpg",
     "static/media/BarlowCondensed-Light.ttf": "/ph-203_project/static/media/BarlowCondensed-Light.3ba02bbdeb04e17f34bf.ttf",
     "index.html": "/ph-203_project/index.html",
-    "main.1325d8d8.css.map": "/ph-203_project/static/css/main.1325d8d8.css.map",
-    "main.b28224fa.js.map": "/ph-203_project/static/js/main.b28224fa.js.map"
+    "main.3a788b25.css.map": "/ph-203_project/static/css/main.3a788b25.css.map",
+    "main.53369219.js.map": "/ph-203_project/static/js/main.53369219.js.map"
   },
   "entrypoints": [
-    "static/css/main.1325d8d8.css",
-    "static/js/main.b28224fa.js"
+    "static/css/main.3a788b25.css",
+    "static/js/main.53369219.js"
   ]
 }
