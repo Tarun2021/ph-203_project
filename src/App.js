@@ -126,20 +126,20 @@ function App() {
         <div id="div2" className="elemt1 container">
           <div className="inputs">
             <h2>Calculating the same for a suction chamber when connected to a diaphragm pump: </h2>
-            <label htmlFor="presin">Enter input pressure:   </label>
+            <label htmlFor="presin">Enter input pressure in Pascals:   </label>
             
             <input type="text" id="presin" onChange={usepresin} placeholder="Enter input pressure(Pa)"/>
             <br />
-            <label htmlFor="presout">Enter output pressure:   </label>
+            <label htmlFor="presout">Enter output pressure in Pascals:   </label>
             <input type="text" id="presout" onChange={usepresout} placeholder="Enter output pressure(Pa)"/>
             <br />
-            <label htmlFor="svol">Enter suction chamber volume:   </label>
+            <label htmlFor="svol">Enter suction chamber volume in m<sup>3</sup>:   </label>
             <input type="text" id="svol" onChange={usesvol} placeholder="Enter suction chamber volume(Vs)"/>
             <br />
-            <label htmlFor="dsvol">Enter dead space volume:   </label>
+            <label htmlFor="dsvol">Enter dead space volume in m<sup>3</sup>:   </label>
             <input type="text" id="dsvol" onChange={usedsvol} placeholder="Enter dead-space volume(Vds)"/>
             <br />
-            <label htmlFor="rotsp">Enter speed of rotation:   </label>
+            <label htmlFor="rotsp">Enter speed of rotation (per second):   </label>
             <input type="text" id="rotsp" onChange={userotsp} placeholder="Enter rotational speed(n)"/>
             < br />
             <button onClick={usecalc}>Calculate</button>
