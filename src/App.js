@@ -156,9 +156,9 @@ function App() {
           <p>Harsh Milind Joshi(2001CS28)</p>
           <p>Vinnakota Tarun Vikas(2001CS76)</p>
           <p>Hardik Goyal(2001CS27)</p>
-          <p>Utkarsh Patil(2001CS28)</p>
-          <p>Jayant(2001CS28)</p>
-          <p>Puneet Sharma(2001CS28)</p>
+          <p>Utkarsh Patil(2001CB61)</p>
+          <p>Jayant Yadav(2001CB27)</p>
+          <p>Puneet Sharma(2001CB41)</p>
         </div>
         
 
